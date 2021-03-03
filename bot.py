@@ -19,7 +19,7 @@ def to_watch():
 	text = films_list[random.randint(0, len(films_list) + 1)]
 	return text
 
-bot = telebot.TeleBot('1488537036:AAEc1bcx7dCSP4m1XXwTN_6sfg_uli9Tkfk')
+bot = telebot.TeleBot('here is your API key)
 
 @bot.message_handler(commands=['start'])
 def send_weclome(message):
