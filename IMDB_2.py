@@ -1,6 +1,9 @@
 import random
 import requests
+import time
 from bs4 import BeautifulSoup
+
+
 
 def film_to_watch():
 
@@ -13,11 +16,8 @@ def film_to_watch():
 		movies = [film.a.text for film in films]
 		films_list += movies
 
-	#print(pages.status_code)
-	#print(len(films_list))
-
-	random_film = print(films_list[random.randint(0, len(films_list) + 1)])
-
+		random_film = print(films_list[random.randint(0, len(films_list) + 1)])
 	return random_film
+
 
 film_to_watch()
